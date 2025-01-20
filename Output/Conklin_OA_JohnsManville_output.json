@@ -1,0 +1,37 @@
+{
+  "PO_number": "4052528",
+  "OA_number": "102755002",
+  "OA_date": "2024-10-28",
+  "Ship_to_company": "ENERGY AIR INC",
+  "Ship_to_address_1": "5401 ENERGY AIR COURT",
+  "Ship_to_city": "ORLANDO",
+  "Ship_to_state": "FL",
+  "Ship_to_postal_code": "32810",
+  "Ship_to_country": "USA",
+  "PO_total": 22534.65,
+  "Estmated_ship_date": "2024-11-01",
+  "LineItems": [
+    {
+      "Line_number": 1,
+      "Qty": 360,
+      "Qty_UOM": "SHT",
+      "Part_number": "1090005706",
+      "Description": "MAD Board 800 MF 1-1/2 x 48 x 120",
+      "Unit_Price": 43.0728,
+      "Price_UOM": "USD",
+      "Line_Total": 15506.21,
+      "Line_item_estmated_ship_date": null
+    },
+    {
+      "Line_number": 2,
+      "Qty": 176,
+      "Qty_UOM": "SHT",
+      "Part_number": "2090005697",
+      "Description": "MAD Board 475 MF 1 x 48 x 120",
+      "Unit_Price": 37.7752,
+      "Price_UOM": "USD",
+      "Line_Total": 6648.44,
+      "Line_item_estmated_ship_date": null
+    }
+  ]
+}

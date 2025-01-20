@@ -1,0 +1,103 @@
+{
+  "PO_number": "050356",
+  "OA_number": "7112644",
+  "OA_date": "2023-09-17",
+  "Ship_to_company": "Conklin Metal Industries",
+  "Ship_to_address_1": "7995 third Glad Parkway",
+  "Ship_to_city": "Austell",
+  "Ship_to_state": "GA",
+  "Ship_to_postal_code": "30168",
+  "Ship_to_country": "USA",
+  "PO_total": 43906.09,
+  "Estmated_ship_date": "2024-09-28",
+  "LineItems": [
+    {
+      "Line_number": 1,
+      "Qty": 10800,
+      "Qty_UOM": "FT2",
+      "Part_number": "5006256",
+      "Description": "ATMOSPHERE DUCT WRAP 0.75# 2.19 X 48 X 75 FSK FACED ROLL",
+      "Unit_Price": 233.86,
+      "Price_UOM": "USD / 1,000.000 FT",
+      "Line_Total": 22525.71,
+      "Line_item_estmated_ship_date": "2024-09-28"
+    },
+    {
+      "Line_number": 2,
+      "Qty": 1600,
+      "Qty_UOM": "FT2",
+      "Part_number": "5006260",
+      "Description": "ATMOSPHERE DUCT WRAP 0.75# 3 X 48 X 50 FSK FACED ROLL",
+      "Unit_Price": 350.77,
+      "Price_UOM": "USD / 1,000.000 FT",
+      "Line_Total": 561.23,
+      "Line_item_estmated_ship_date": "2024-09-28"
+    },
+    {
+      "Line_number": 3,
+      "Qty": 12666.667,
+      "Qty_UOM": "FT2",
+      "Part_number": "5001247",
+      "Description": "ATMOSPHERE DUCT LINER 2.0# 0.5 X 47.5 X 100 EDGE COAT ROLL",
+      "Unit_Price": 462.33,
+      "Price_UOM": "USD / 1,000.000 FT",
+      "Line_Total": 5856.16,
+      "Line_item_estmated_ship_date": "2024-09-28"
+    },
+    {
+      "Line_number": 4,
+      "Qty": 15383.333,
+      "Qty_UOM": "FT2",
+      "Part_number": "5004266",
+      "Description": "ATMOSPHERE DUCT LINER 1.5# 1 X 35.5 X 100 EDGE COAT ROLL",
+      "Unit_Price": 516.71,
+      "Price_UOM": "USD / 1,000.000 FT",
+      "Line_Total": 7948.7,
+      "Line_item_estmated_ship_date": "2024-09-28"
+    },
+    {
+      "Line_number": 5,
+      "Qty": 11083.333,
+      "Qty_UOM": "FT2",
+      "Part_number": "5001160",
+      "Description": "ATMOSPHERE DUCT LINER 1.5# 1 X 47.5 X 100 EDGE COAT ROLL",
+      "Unit_Price": 516.71,
+      "Price_UOM": "USD / 1,000.000 FT",
+      "Line_Total": 5726.86,
+      "Line_item_estmated_ship_date": "2024-09-28"
+    },
+    {
+      "Line_number": 6,
+      "Qty": 13125,
+      "Qty_UOM": "FT2",
+      "Part_number": "ATL 1.5# 1 X 56.25 X 100 EDG",
+      "Description": "ROL",
+      "Unit_Price": 516.71,
+      "Price_UOM": "USD / 1,000.000 FT",
+      "Line_Total": 6781.87,
+      "Line_item_estmated_ship_date": "2024-09-28"
+    },
+    {
+      "Line_number": 7,
+      "Qty": 23800,
+      "Qty_UOM": "FT2",
+      "Part_number": "5001192",
+      "Description": "ATMOSPHERE DUCT LINER 1.5# 1 X 59.5 X 100 EDGE COAT ROLL",
+      "Unit_Price": 516.71,
+      "Price_UOM": "USD / 1,000.000 FT",
+      "Line_Total": 12297.71,
+      "Line_item_estmated_ship_date": "2024-09-28"
+    },
+    {
+      "Line_number": 8,
+      "Qty": 1983.333,
+      "Qty_UOM": "FT2",
+      "Part_number": "5001321",
+      "Description": "ATMOSPHERE DUCT LINER 1.5# 2 X 59.5 X 50 EDGE COAT ROLL",
+      "Unit_Price": 1113.2,
+      "Price_UOM": "USD / 1,000.000 FT",
+      "Line_Total": 2207.85,
+      "Line_item_estmated_ship_date": "2024-09-28"
+    }
+  ]
+}

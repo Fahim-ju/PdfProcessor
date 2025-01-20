@@ -1,0 +1,26 @@
+{
+  "PO_number": "4052549",
+  "OA_number": "MSU - 514152",
+  "OA_date": "2024-10-28",
+  "Ship_to_company": "Conklin Metal Industries, Inc.",
+  "Ship_to_address_1": "684 Antone St NW Ste 100",
+  "Ship_to_city": "Atlanta",
+  "Ship_to_state": "GA",
+  "Ship_to_postal_code": "30318",
+  "Ship_to_country": "USA",
+  "PO_total": 5340,
+  "Estmated_ship_date": "2024-11-14",
+  "LineItems": [
+    {
+      "Line_number": 1,
+      "Qty": 8900,
+      "Qty_UOM": "LBS",
+      "Part_number": "GN12GA48F",
+      "Description": "Prime Galvannealed Coil CHTD A40 CSB",
+      "Unit_Price": 60,
+      "Price_UOM": "CWT",
+      "Line_Total": 5340,
+      "Line_item_estmated_ship_date": null
+    }
+  ]
+}

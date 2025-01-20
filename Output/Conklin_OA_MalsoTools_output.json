@@ -1,0 +1,70 @@
+{
+  "PO_number": "4052926",
+  "OA_number": "685932",
+  "OA_date": "2024-11-05",
+  "Ship_to_company": "CONKLIN METAL INDUSTRIES",
+  "Ship_to_address_1": "7995 THIRD FLAG PARKWAY",
+  "Ship_to_city": "Austell",
+  "Ship_to_state": "GA",
+  "Ship_to_postal_code": "30168",
+  "Ship_to_country": "United States",
+  "PO_total": 1010.87,
+  "Estmated_ship_date": "2024-11-07",
+  "LineItems": [
+    {
+      "Line_number": 1,
+      "Qty": 4,
+      "Qty_UOM": "EA",
+      "Part_number": "A20",
+      "Description": "SCRATCH AWL, REG GRIP, 1/4\"",
+      "Unit_Price": 5.89,
+      "Price_UOM": "EA",
+      "Line_Total": 23.56,
+      "Line_item_estmated_ship_date": "2024-11-07"
+    },
+    {
+      "Line_number": 2,
+      "Qty": 6,
+      "Qty_UOM": "EA",
+      "Part_number": "C5R",
+      "Description": "CRIMPER, PIPE,  5-BLADE",
+      "Unit_Price": 29.8,
+      "Price_UOM": "EA",
+      "Line_Total": 178.8,
+      "Line_item_estmated_ship_date": "2024-11-07"
+    },
+    {
+      "Line_number": 3,
+      "Qty": 1,
+      "Qty_UOM": "EA",
+      "Part_number": "DS1",
+      "Description": "DUCT STRETCHER",
+      "Unit_Price": 22.27,
+      "Price_UOM": "EA",
+      "Line_Total": 22.27,
+      "Line_item_estmated_ship_date": "2024-11-07"
+    },
+    {
+      "Line_number": 4,
+      "Qty": 8,
+      "Qty_UOM": "EA",
+      "Part_number": "SH3",
+      "Description": "HAMMER, SETTING, 18 OZ",
+      "Unit_Price": 46.29,
+      "Price_UOM": "EA",
+      "Line_Total": 370.32,
+      "Line_item_estmated_ship_date": "2024-11-07"
+    },
+    {
+      "Line_number": 5,
+      "Qty": 12,
+      "Qty_UOM": "EA",
+      "Part_number": "TY4G",
+      "Description": "TIE TENSIONING TOOL, GRIPPED",
+      "Unit_Price": 34.66,
+      "Price_UOM": "EA",
+      "Line_Total": 415.92,
+      "Line_item_estmated_ship_date": "2024-11-07"
+    }
+  ]
+}
