@@ -12,22 +12,22 @@
   "Estmated_ship_date": "2024-11-01",
   "LineItems": [
     {
-      "Line_number": 1,
+      "Line_number": "1",
       "Qty": 360,
       "Qty_UOM": "SHT",
-      "Part_number": "1090005706",
-      "Description": "MAD Board 800 MF 1-1/2 x 48 x 120",
+      "Part_number": "MB112X48X120-PL",
+      "Description": "MAD Board 800 MF 1-1/2 x 48 x 120 1200.0 SF/PT",
       "Unit_Price": 43.0728,
       "Price_UOM": "USD",
       "Line_Total": 15506.21,
       "Line_item_estmated_ship_date": null
     },
     {
-      "Line_number": 2,
+      "Line_number": "2",
       "Qty": 176,
       "Qty_UOM": "SHT",
-      "Part_number": "2090005697",
-      "Description": "MAD Board 475 MF 1 x 48 x 120",
+      "Part_number": "MB1X48X120-PL",
+      "Description": "MAD Board 475 MF 1 x 48 x 120 1760.0 SF/PT",
       "Unit_Price": 37.7752,
       "Price_UOM": "USD",
       "Line_Total": 6648.44,

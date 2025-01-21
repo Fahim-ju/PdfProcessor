@@ -47,7 +47,7 @@ const processPdfWithChatGPT = async (pdfBuffer) => {
               description: "Postal code of the shipping address",
             },
             Ship_to_country: {
-              type: "string",
+              type: ["string", "null"],
               description: "Country of the shipping address. Possibly empty if not given",
             },
             PO_total: {
@@ -55,7 +55,7 @@ const processPdfWithChatGPT = async (pdfBuffer) => {
               description: "The total amount of the purchase order",
             },
             Estmated_ship_date: {
-              type: "string",
+              type: ["string", "null"],
               format: "date",
               description: "Estimated shipping date for the entire purchase order provided by the supplier",
             },
@@ -65,8 +65,9 @@ const processPdfWithChatGPT = async (pdfBuffer) => {
                 type: "object",
                 properties: {
                   Line_number: {
-                    type: "number",
-                    description: "The lineitem number of the purchase order item mentioned in the invoice",
+                    type: ["string"],
+                    description:
+                      "The lineitem number of the purchase order item mentioned in the invoice. It must not be sequential. It may not start from 1.",
                   },
                   Qty: {
                     type: "number",
@@ -144,7 +145,8 @@ const processPdfWithChatGPT = async (pdfBuffer) => {
         messages: [
           {
             role: "system",
-            content: "You are an AI assistant that extracts structured data from invoices.",
+            content:
+              "You are an AI assistant that extracts structured data from purchase order invoices. You are not creative and can only provide given information. if you do not find any information, make the relevant field null or empty string.",
           },
           {
             role: "user",
