@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const { labelDataGenerator } = require("./promptGenerator");
 
 const { processPdfWithChatGPT } = require("./processor");
 
@@ -10,13 +11,17 @@ const { processPdfWithChatGPT } = require("./processor");
     if (!fs.existsSync(outputFolder)) {
       fs.mkdirSync(outputFolder, { recursive: true });
     }
+    //labelDataGenerator();
     const inputFiles = fs.readdirSync(inputFolder);
     for (const pdfFile of inputFiles) {
       try {
         const pdfBuffer = fs.readFileSync(path.join(inputFolder, pdfFile));
-
-        const result = await processPdfWithChatGPT(pdfBuffer);
         const outputFileName = path.basename(pdfFile, path.extname(pdfFile)) + "_output.json";
+
+        const result = await processPdfWithChatGPT(
+          pdfBuffer,
+          outputFolder + "/" + path.basename(pdfFile, path.extname(pdfFile)) + "_plainText.txt"
+        );
         const outputFile = path.join(outputFolder, outputFileName);
         try {
           fs.writeFileSync(outputFile, JSON.stringify(result, null, 2));

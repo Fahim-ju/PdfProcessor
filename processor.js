@@ -1,11 +1,70 @@
 require("dotenv").config();
 const pdfParse = require("pdf-parse");
 const axios = require("axios");
+const fs = require("fs");
+const path = require("path");
 
-const processPdfWithChatGPT = async (pdfBuffer) => {
+const processPdfWithChatGPT = async (pdfBuffer, outputFileName) => {
+  function escapeString(input) {
+    return input.replace(/[\\"'\n\t]/g, (match) => {
+      switch (match) {
+        case "\\":
+          return "\\\\";
+        case '"':
+          return '\\"';
+        case "'":
+          return "\\'";
+        case "\n":
+          return " ";
+        case "\t":
+          return " ";
+        case "\r":
+          return " ";
+        case "\b":
+          return " ";
+        default:
+          return match;
+      }
+    });
+  }
+
   try {
-    const pdfData = await pdfParse(pdfBuffer);
+    const inputJsonFolder = path.join(__dirname, "/Labeled data/input json");
+    const outputFolderJsonFolder = path.join(__dirname, "/Labeled data/outputJson");
+    const inputJsonFiles = fs.readdirSync(inputFolder);
+    for (const file of inputJsonFiles) {
+      try {
+        const fileBuffer = fs.readFileSync(path.join(inputJsonFolder, file));
+        const outputFileName = path.basename(file, path.extname(file)) + ".text";
 
+        const result = await processPdfWithChatGPT(
+          fileBuffer,
+          outputFolderJsonFolder + "/" + path.basename(file, path.extname(file)) + "_plainText.txt"
+        );
+        const outputFile = path.join(outputFolderJsonFolder, outputFileName);
+        try {
+          fs.writeFileSync(outputFile, JSON.stringify(result, null, 2));
+        } catch (error) {
+          console.log(`Failed to write json file for ${file}`);
+        }
+        console.log(`Output for ${file} saved to ${outputFile}`);
+      } catch (error) {
+        console.error(`Error processing ${file}:`, error);
+      }
+    }
+  } catch (error) {
+    console.log(`Failed to escape string`);
+  }
+
+  try {
+    const pdfTextFileName = outputFileName;
+    const pdfData = await pdfParse(pdfBuffer);
+    const pdfText = escapeString(pdfData.text);
+    try {
+      fs.writeFileSync(pdfTextFileName, pdfText);
+    } catch (error) {
+      console.log(`Failed to write plainText of file for ${pdfTextFileName}`);
+    }
     const functions = [
       {
         name: "extractPurchaseOrderData",
@@ -67,7 +126,7 @@ const processPdfWithChatGPT = async (pdfBuffer) => {
                   Line_number: {
                     type: ["string"],
                     description:
-                      "The lineitem number of the purchase order item mentioned in the invoice. It must not be sequential. It may not start from 1.",
+                      "The lineitem number of the purchase order item mentioned in the invoice. It must not be sequential. It may not start from 1. [i.e: 10,1,20,15]",
                   },
                   Qty: {
                     type: "number",

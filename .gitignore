@@ -6,5 +6,6 @@ node_modules/
 
 # Lock files
 package-lock.json
-public/
-output/
+Public/
+Output/
+Labeled data/
